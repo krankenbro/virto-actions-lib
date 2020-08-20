@@ -63,3 +63,11 @@ async function isPullRequest(github)
 {
     return github.context.eventName === 'pull_request';
 }
+
+module.exports.findArtifact = findArtifact;
+module.exports.getLatestRelease = getLatestRelease;
+module.exports.getBranchName = getBranchName;
+module.exports.getRepoName = getRepoName;
+module.exports.getProjectType = getProjectType;
+module.exports.downloadFile = downloadFile;
+module.exports.isPullRequest = isPullRequest;
